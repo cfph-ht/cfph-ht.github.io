@@ -40,17 +40,17 @@ color:white;
 /* HEADER */
 header{
 text-align:center;
-padding:100px 20px 60px; /* Réduit un peu le padding haut car l'image est plus grande */
+padding:100px 20px 60px;
 }
 
-/* 🔥 IMAGE HEADER (MODIFIÉE : RONDE ET PLUS GRANDE) */
+/* 🔥 IMAGE HEADER (RONDE ET PLUS GRANDE) */
 .header-img{
-width:160px; /* Taille agrandie */
-height:160px; /* Doit être identique à width pour un rond parfait */
+width:160px; 
+height:160px; 
 display:block;
 margin:0 auto 25px auto;
-border-radius:50%; /* Rend l'image parfaitement ronde */
-object-fit:cover; /* Empêche la déformation de l'image */
+border-radius:50%; 
+object-fit:cover; 
 box-shadow:0 0 25px rgba(0, 245, 255, 0.6);
 border: 2px solid rgba(0, 245, 255, 0.3);
 }
@@ -76,7 +76,7 @@ opacity:0.8;
 
 /* SECTIONS */
 section{
-padding:80px 20px;
+padding:40px 20px;
 max-width:900px;
 margin:auto;
 }
@@ -118,43 +118,39 @@ border-bottom:1px solid rgba(255,255,255,0.1);
 
 .icon{
 font-size:28px;
-
 background: linear-gradient(270deg,#00f5ff,#00ff88,#8a2be2);
 background-size:400% 400%;
 animation: neon 5s linear infinite;
-
 -webkit-background-clip:text;
 color:transparent;
-
 transition:0.3s;
-}
-
-.icon:hover{
-transform:scale(1.3) rotate(5deg);
-filter:drop-shadow(0 0 10px #00f5ff);
 }
 
 /* BUTTON */
 .btn{
 display:inline-block;
-margin: 10px 5px; /* Ajout d'un petit espacement entre les boutons */
-padding:15px 30px;
+margin: 10px 5px;
+padding:15px 40px;
 border-radius:40px;
-
 background: linear-gradient(270deg,#00f5ff,#00ff88,#8a2be2);
 background-size:400% 400%;
 animation:neon 5s infinite;
-
 color:black;
 text-decoration:none;
 font-weight:bold;
+transition: transform 0.3s ease;
+}
+
+.btn:hover {
+transform: scale(1.05);
 }
 
 /* FOOTER */
 footer{
 text-align:center;
-padding:30px;
-opacity:0.6;
+padding:60px 20px;
+opacity:0.7;
+line-height: 1.6;
 }
 </style>
 </head>
@@ -162,50 +158,55 @@ opacity:0.6;
 <body>
 
 <header>
-<img src="image.jpg" class="header-img" alt="logo">
+    <img src="image.jpg" class="header-img" alt="logo">
 
-<h1>CFPH Formation en cyber securité</h1>
-<p class="subtitle">Protégez-vous contre les cybermenaces</p>
+    <h1>CFPH Formation en cyber securité</h1>
+    <p class="subtitle">Protégez-vous contre les cybermenaces</p>
 
-<a href="https://Chrxsssss.github.io" target="_blank" class="btn">
-<i class="fas fa-globe"></i> Website
-</a>
+    <a href="https://Chrxsssss.github.io" target="_blank" class="btn">
+        <i class="fas fa-globe"></i> Website
+    </a>
 
-<a href="https://chat.whatsapp.com/F23ftXVMXrDLLwMeN1Vm7a?mode=gi_t" target="_blank" class="btn">
-<i class="fab fa-whatsapp"></i> WhatsApp Group
-</a>
+    <a href="https://chat.whatsapp.com/F23ftXVMXrDLLwMeN1Vm7a?mode=gi_t" target="_blank" class="btn">
+        <i class="fab fa-whatsapp"></i> WhatsApp Group
+    </a>
 </header>
 
 <section>
-<div class="card">
-<h2>🎯 Objectifs de la formation</h2>
+    <div class="card">
+        <h2>🎯 Objectifs de la formation</h2>
+        <ul style="list-style:none; padding:0;">
+            <li class="objectif-item">
+                <span>Identifier les menaces : Virus, Phishing, Malware</span>
+                <i class="fas fa-bug icon"></i>
+            </li>
+            <li class="objectif-item">
+                <span>Comprendre les attaques (réseau, web)</span>
+                <i class="fas fa-network-wired icon"></i>
+            </li>
+            <li class="objectif-item">
+                <span>Protéger les systèmes et données</span>
+                <i class="fas fa-shield-alt icon"></i>
+            </li>
+            <li class="objectif-item">
+                <span>Réagir face à une cyberattaque</span>
+                <i class="fas fa-exclamation-triangle icon"></i>
+            </li>
+        </ul>
+    </div>
 
-<ul style="list-style:none; padding:0;">
-<li class="objectif-item">
-<span>Identifier les menaces : Virus, Phishing, Malware</span>
-<i class="fas fa-bug icon"></i>
-</li>
+    <div class="card" style="text-align:center">
+        <h2>📲 Rejoindre la formation</h2>
+        <p style="margin-bottom: 20px; opacity: 0.9;">Contactez-moi directement pour commencer</p>
 
-<li class="objectif-item">
-<span>Comprendre les attaques (réseau, web)</span>
-<i class="fas fa-network-wired icon"></i>
-</li>
-
-<li class="objectif-item">
-<span>Protéger les systèmes et données</span>
-<i class="fas fa-shield-alt icon"></i>
-</li>
-
-<li class="objectif-item">
-<span>Réagir face à une cyberattaque</span>
-<i class="fas fa-exclamation-triangle icon"></i>
-</li>
-</ul>
-</div>
+        <a href="https://wa.me/50943243114" target="_blank" class="btn">
+            <i class="fab fa-whatsapp"></i> Owner
+        </a>
+    </div>
 </section>
 
 <footer>
-<p>&copy; 2026 CANADO TECHNIQUE - Cyber CPH</p>
+    <p>© CANADO TECHNIQUE <br> <strong>JOIN US</strong></p>
 </footer>
 
 </body>
