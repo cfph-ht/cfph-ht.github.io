@@ -40,17 +40,19 @@ color:white;
 /* HEADER */
 header{
 text-align:center;
-padding:120px 20px 60px;
+padding:100px 20px 60px; /* Réduit un peu le padding haut car l'image est plus grande */
 }
 
-/* 🔥 IMAGE HEADER */
+/* 🔥 IMAGE HEADER (MODIFIÉE : RONDE ET PLUS GRANDE) */
 .header-img{
-width:130px;
-height:auto;
+width:160px; /* Taille agrandie */
+height:160px; /* Doit être identique à width pour un rond parfait */
 display:block;
 margin:0 auto 25px auto;
-border-radius:15px;
-box-shadow:0 0 25px #00f5ff;
+border-radius:50%; /* Rend l'image parfaitement ronde */
+object-fit:cover; /* Empêche la déformation de l'image */
+box-shadow:0 0 25px rgba(0, 245, 255, 0.6);
+border: 2px solid rgba(0, 245, 255, 0.3);
 }
 
 /* TITRE */
@@ -135,7 +137,7 @@ filter:drop-shadow(0 0 10px #00f5ff);
 /* BUTTON */
 .btn{
 display:inline-block;
-margin-top:20px;
+margin: 10px 5px; /* Ajout d'un petit espacement entre les boutons */
 padding:15px 30px;
 border-radius:40px;
 
@@ -160,8 +162,6 @@ opacity:0.6;
 <body>
 
 <header>
-
-<!-- ✅ IMAGE AJOUTÉE -->
 <img src="image.jpg" class="header-img" alt="logo">
 
 <h1>CFPH Formation en cyber securité</h1>
@@ -177,12 +177,10 @@ opacity:0.6;
 </header>
 
 <section>
-
 <div class="card">
 <h2>🎯 Objectifs de la formation</h2>
 
 <ul style="list-style:none; padding:0;">
-
 <li class="objectif-item">
 <span>Identifier les menaces : Virus, Phishing, Malware</span>
 <i class="fas fa-bug icon"></i>
@@ -202,6 +200,13 @@ opacity:0.6;
 <span>Réagir face à une cyberattaque</span>
 <i class="fas fa-exclamation-triangle icon"></i>
 </li>
-
 </ul>
 </div>
+</section>
+
+<footer>
+<p>&copy; 2026 CANADO TECHNIQUE - Cyber CPH</p>
+</footer>
+
+</body>
+</html>
